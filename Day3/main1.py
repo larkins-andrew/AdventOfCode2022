@@ -8,8 +8,10 @@ for l in f:
         if c in c2:
             item = c
     if item.isupper():
-        score+=ord(c)-65+27
+        print(item, ord(item)-65+27)
+        score+=ord(item)-65+27
     else:
-        score+=ord(c)-96
+        print(item, ord(item)-96)
+        score+=ord(item)-96
 print(score)
 f.close()
